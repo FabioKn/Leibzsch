@@ -1,0 +1,173 @@
+nav {
+    background: #333;
+    overflow: visible;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.dropbtn {
+    background-color: #333;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    background-color: #333;
+    float: left;
+    overflow: visible;
+}
+
+.dropdown .dropbtn {
+    background-color: #333;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    background-color: #333;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    background-color: #333;
+    float: none;
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #333;
+    background-color: #d4831a;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .dropdown, .dropbtn {
+        display: block;
+        width: 100%;
+    }
+
+    .dropdown-content a {
+        width: 100%;
+    }
+}
+
+
+section {
+    position: relative;
+    padding: 60px 20px;
+    min-height: 100vh;
+    transition: background-color 0.5s ease;
+    scroll-behavior: smooth;
+    padding-bottom: 50px;
+}
+
+section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 560px; 
+    background-image: url('muster.png'); 
+    background-repeat: repeat-x;
+}
+
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit:scale-down; 
+}
+
+
+#cossi-morgen { 
+    background: linear-gradient(to bottom, #FFDAB9, #FFB6C1); 
+}
+
+#cossi-abend { 
+    background: linear-gradient(to bottom, #FFB6C1, #E6E6FA); 
+}
+
+#radfahren-cossi { 
+    background: linear-gradient(to bottom, #E6E6FA, #98FB98); 
+}
+
+#markkleeberger-see { 
+    background: linear-gradient(to bottom, #98FB98, #AFEEEE); 
+}
+
+#stoermthaler-see { 
+    background: linear-gradient(to bottom, #AFEEEE, #DDA0DD); 
+}
+
+#schladitzer-bucht { 
+    background: linear-gradient(to bottom, #DDA0DD, #FFDEAD); 
+}
+
+#suesse-cafes { 
+    background: linear-gradient(to bottom, #FFDEAD, #F0E68C); 
+}
+
+#lecker-essen { 
+    background: linear-gradient(to bottom, #F0E68C, #FFE4B5); 
+}
+
+#voelkerschlachtdenkmal { 
+    background: linear-gradient(to bottom, #FFE4B5, #FFEFD5); 
+}
+
+#panometer { 
+    background: linear-gradient(to bottom, #FFEFD5, #FFFACD); 
+}
+
+#kunstkraftwerk { 
+    background: linear-gradient(to bottom, #FFFACD, #ADD8E6); 
+}
+
+#parks-leipzig { 
+    background: linear-gradient(to bottom, #ADD8E6, #FFDAB9); 
+}
+
+
+#carouselExampleIndicators {
+    background-color: #FFDAB9;
+}
+
+
+/* Media Queries für Responsive Design */
+@media only screen and (max-width: 768px) {
+    nav ul li {
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    section {
+        padding: 40px 10px;
+    }
+}
