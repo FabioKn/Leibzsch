@@ -104,6 +104,9 @@ section::after {
     object-fit:scale-down; 
 }
 
+#about {
+    background-color: #FFDAB9;
+}
 
 #cossi-morgen { 
     background: linear-gradient(to bottom, #FFDAB9, #FFB6C1); 
